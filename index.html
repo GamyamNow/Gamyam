@@ -579,31 +579,31 @@
                 });
             }
 
-            // --- Contact/Chat Modal Logic (Updated) ---
-            const openChatBtn = document.getElementById('open-chat-btn');
-            const contactModal = document.getElementById('contact-modal');
-            const closeContactModalBtn = document.getElementById('close-contact-modal-btn');
-            const contactFormIframe = document.getElementById('contact-form-iframe');
-            // A new hypothetical URL for a simple contact form. Replace with your own free form link.
-            const contactFormUrl = 'https://cdn.jotfor.ms/agent/embedjs/019a290ab17b772b88f3900bf6cafbd8ad11/embed.js'; // Placeholder URL
+            // // --- Contact/Chat Modal Logic (Updated) ---
+            // const openChatBtn = document.getElementById('open-chat-btn');
+            // const contactModal = document.getElementById('contact-modal');
+            // const closeContactModalBtn = document.getElementById('close-contact-modal-btn');
+            // const contactFormIframe = document.getElementById('contact-form-iframe');
+            // // A new hypothetical URL for a simple contact form. Replace with your own free form link.
+            // const contactFormUrl = 'https://cdn.jotfor.ms/agent/embedjs/019a290ab17b772b88f3900bf6cafbd8ad11/embed.js'; // Placeholder URL
 
-            if (openChatBtn && contactModal && closeContactModalBtn && contactFormIframe) {
-                openChatBtn.addEventListener('click', () => {
-                    contactFormIframe.src = contactFormUrl;
-                    contactModal.classList.remove('hidden');
-                    openChatBtn.classList.add('hidden'); // Hide the chat button
-                });
+            // if (openChatBtn && contactModal && closeContactModalBtn && contactFormIframe) {
+            //     openChatBtn.addEventListener('click', () => {
+            //         contactFormIframe.src = contactFormUrl;
+            //         contactModal.classList.remove('hidden');
+            //         openChatBtn.classList.add('hidden'); // Hide the chat button
+            //     });
 
-                const closeContactModal = () => {
-                    contactModal.classList.add('hidden');
-                    contactFormIframe.src = ''; // Clear src to stop form processes
-                    openChatBtn.classList.remove('hidden'); // Show the chat button
-                };
+            //     const closeContactModal = () => {
+            //         contactModal.classList.add('hidden');
+            //         contactFormIframe.src = ''; // Clear src to stop form processes
+            //         openChatBtn.classList.remove('hidden'); // Show the chat button
+            //     };
 
-                closeContactModalBtn.addEventListener('click', closeContactModal);
+            //     closeContactModalBtn.addEventListener('click', closeContactModal);
 
-                // Removed click-outside-to-close logic as it's a pop-up, not an overlay
-            }
+            //     // Removed click-outside-to-close logic as it's a pop-up, not an overlay
+            // }
 
             // --- Hero Carousel Logic (Restored) ---
             const heroContent = [
